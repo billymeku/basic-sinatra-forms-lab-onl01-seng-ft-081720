@@ -11,8 +11,8 @@ class App < Sinatra::Base
     erb :"teams/show"
   end
 
-  post '/newteam' do 
-    erb:team
+  post '/team' do 
+    erb :team
   end 
    
 end
