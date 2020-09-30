@@ -12,10 +12,10 @@ end
 
   get '/team' do 
         @team = Team.all
-        erb :"s/index"
+        erb :team 
     end
 
-    get '/todos/new' do
+    get '/t/new' do
         erb :"todos/new"
     end
 
