@@ -12,7 +12,7 @@ class App < Sinatra::Base
   end
 
   post '/team' do 
-    u = @teams.all 
+    @t = App.all 
     erb :team
   end 
    
