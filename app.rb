@@ -5,10 +5,10 @@ class App < Sinatra::Base
   erb :newteam
   end 
   
-  get '/todos/:id' do
+  get '/teams/:id' do
     id = params[:id]
-    @todo = .find_by_id(id)
-    erb :"todos/show"
+    @teams = .find_by_id(id)
+    erb :"teams/show"
   end
 
   # post '/newteam' do 
