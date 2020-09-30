@@ -7,7 +7,7 @@ class App < Sinatra::Base
   
   get '/teams/:id' do
     id = params[:id]
-    @teams = .find_by_id(id)
+    t = @teams.find_by_id(id)
     erb :"teams/show"
   end
 
