@@ -6,9 +6,9 @@ class App < Sinatra::Base
   end 
   
   get '/todos/:id' do
-        id = params[:id]
-        @todo = Todo.find_by_id(id)
-        erb :"todos/show"
+    id = params[:id]
+    @todo = .find_by_id(id)
+    erb :"todos/show"
    end
 
    post '/newteam' do 
